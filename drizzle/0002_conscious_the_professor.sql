@@ -1,0 +1,11 @@
+ALTER TABLE "sus_submissions" RENAME COLUMN "q1" TO "use_frequency";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q2" TO "use_complex";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q3" TO "use_easy";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q4" TO "need_help";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q5" TO "function_integration";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q6" TO "inconsistency";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q7" TO "learning_curve";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q8" TO "jumbled";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q9" TO "confidence";--> statement-breakpoint
+ALTER TABLE "sus_submissions" RENAME COLUMN "q10" TO "learn_system";--> statement-breakpoint
+ALTER TABLE "sus_submissions" ADD COLUMN "external_user_id" varchar(255) NOT NULL;

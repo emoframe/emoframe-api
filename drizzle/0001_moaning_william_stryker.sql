@@ -1,0 +1,1 @@
+ALTER TABLE "sus_submissions" ADD COLUMN "evaluation_id" varchar(255) NOT NULL;

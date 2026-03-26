@@ -1,0 +1,129 @@
+{
+  "id": "4cb0be18-9c3c-4ab7-9d5f-23437bcc463a",
+  "prevId": "a6a02568-0d7a-4d90-9a49-0c43987df55c",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.sus_submissions": {
+      "name": "sus_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "use_frequency": {
+          "name": "use_frequency",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "use_complex": {
+          "name": "use_complex",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "use_easy": {
+          "name": "use_easy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "need_help": {
+          "name": "need_help",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "function_integration": {
+          "name": "function_integration",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "inconsistency": {
+          "name": "inconsistency",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "learning_curve": {
+          "name": "learning_curve",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "jumbled": {
+          "name": "jumbled",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "confidence": {
+          "name": "confidence",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "learn_system": {
+          "name": "learn_system",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "final_score": {
+          "name": "final_score",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
