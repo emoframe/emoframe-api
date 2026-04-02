@@ -30,7 +30,7 @@ export const createLeapSchema = z.object({
       guilty: answerSchema,
       cold: answerSchema,
       despise: answerSchema,
-      fakePittyOn: answerSchema,
+      takePityOn: answerSchema,
       disgusting: answerSchema,
       need: answerSchema,
       duty: answerSchema,

@@ -36,6 +36,27 @@
       "when": 1774525219182,
       "tag": "0004_tired_wolfpack",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1775146370328,
+      "tag": "0005_windy_bloodaxe",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1775146781399,
+      "tag": "0006_worthless_preak",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1775148302056,
+      "tag": "0007_petite_nemesis",
+      "breakpoints": true
     }
   ]
 }

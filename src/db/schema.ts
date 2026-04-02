@@ -123,3 +123,105 @@ export const leapSubmissions = pgTable('leap_submissions', {
   factorValues: jsonb('factor_values').notNull(),
   submittedAt: timestamp('submitted_at').defaultNow(),
 })
+
+export const eazSubmission = pgTable('eaz_submissions', {
+  id: serial('id').primaryKey(),
+
+  applicationId: varchar('application_id', { length: 255 }).notNull(), 
+  evaluationId: varchar('evaluation_id', { length: 255 }).notNull(), 
+  externalUserId: varchar('external_user_id', { length: 255 }).notNull(),
+
+  happy: integer('happy').notNull(),
+  tired: integer('tired').notNull(),
+  worried: integer('worried').notNull(),
+  confident: integer('confident').notNull(),
+  courageous: integer('courageous').notNull(),
+  nervous: integer('nervous').notNull(),
+  determined: integer('determined').notNull(),
+  guilty: integer('guilty').notNull(),
+  passionate: integer('passionate').notNull(),
+  angry: integer('angry').notNull(),
+  brave: integer('brave').notNull(),
+  openNewThings: integer('open_new_things').notNull(),
+  happyPerson: integer('happy_person').notNull(),
+  easyToAnger: integer('easy_to_anger').notNull(),
+  proudAboutMyself: integer('proud_about_myself').notNull(),
+  humiliated: integer('humiliated').notNull(),
+  sad: integer('sad').notNull(),
+  grumpy: integer('grumpy').notNull(),
+  rage: integer('rage').notNull(),
+  resilient: integer('resilient').notNull(),
+
+  rawScore: integer('raw_score').notNull(),
+  zungIndex: numeric('zung_index').notNull(),
+  classification: varchar('classification', { length: 50 }).notNull(),
+
+  submittedAt: timestamp('submitted_at').defaultNow(),
+})
+
+export const gdsSubmission = pgTable('gds_submissions', {
+  id: serial('id').primaryKey(),
+
+  applicationId: varchar('application_id', { length: 255 }).notNull(), 
+  evaluationId: varchar('evaluation_id', { length: 255 }).notNull(), 
+  externalUserId: varchar('external_user_id', { length: 255 }).notNull(),
+
+  satisfied: integer('satisfied').notNull(),
+  noActivities: integer('no_activities').notNull(),
+  empty: integer('empty').notNull(),
+  upset: integer('upset').notNull(),
+  good: integer('good').notNull(),
+  bad: integer('bad').notNull(),
+  happy: integer('happy').notNull(),
+  helpless: integer('helpless').notNull(),
+  stayAtHome: integer('stay_at_home').notNull(),
+  problemsOfMemory: integer('problems_of_memory').notNull(),
+  wonderfulToStayAlive: integer('wonderful_to_stay_alive').notNull(),
+  useless: integer('useless').notNull(),
+  fullOfEnergy: integer('full_of_energy').notNull(),
+  hopeless: integer('hopeless').notNull(),
+  unlucky: integer('unlucky').notNull(),
+
+  totalScore: integer('total_score').notNull(),
+  classification: varchar('classification', { length: 50 }).notNull(),
+
+  submittedAt: timestamp('submitted_at').defaultNow(),
+})
+
+export const brumsSubmission = pgTable('brums_submissions', {
+  id: serial('id').primaryKey(),
+
+  applicationId: varchar('application_id', { length: 255 }).notNull(), 
+  evaluationId: varchar('evaluation_id', { length: 255 }).notNull(), 
+  externalUserId: varchar('external_user_id', { length: 255 }).notNull(),
+
+  cheered_up: integer('cheered_up').notNull(),
+  irritated: integer('irritated').notNull(),
+  depressed: integer('depressed').notNull(),
+  terrified: integer('terrified').notNull(),
+  crestfallen: integer('crestfallen').notNull(),
+  broken_down: integer('broken_down').notNull(),
+  confused: integer('confused').notNull(),
+  exhausted: integer('exhausted').notNull(),
+  anxious: integer('anxious').notNull(),
+  unhappy: integer('unhappy').notNull(),
+  huffy: integer('huffy').notNull(),
+  worried: integer('worried').notNull(),
+  sad: integer('sad').notNull(),
+  sleepy: integer('sleepy').notNull(),
+  insecure: integer('insecure').notNull(),
+  willing: integer('willing').notNull(),
+  tense: integer('tense').notNull(),
+  disoriented: integer('disoriented').notNull(),
+  grumpy: integer('grumpy').notNull(),
+  undecided: integer('undecided').notNull(),
+  tired: integer('tired').notNull(),
+  energy: integer('energy').notNull(),
+  angry: integer('angry').notNull(),
+  alert: integer('alert').notNull(),
+
+  factorScores: jsonb('factor_scores').notNull(),
+  tmd: integer('tmd').notNull(),
+
+  submittedAt: timestamp('submitted_at').defaultNow(),
+})

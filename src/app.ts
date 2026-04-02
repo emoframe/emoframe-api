@@ -1,10 +1,13 @@
 import express from 'express';
-import cors from 'cors'; // realização de requisições sem serem bloqueadas pelo navegador
-import helmet from 'helmet'; // headers de segurança
+import cors from 'cors';
+import helmet from 'helmet';
 import susRoutes from './routes/sus.routes'
 import panasRoutes from './routes/panas.routes'
 import leapRoutes from './routes/leap.routes'
 import samRoutes from './routes/sam.routes'
+import eazRoutes from './routes/eaz.routes'
+import gdsRoutes from './routes/gds.routes'
+import brumsRoutes from './routes/brums.routes'
 const app = express();
 
 app.use(helmet());
@@ -19,6 +22,9 @@ app.use('/api/sus', susRoutes);
 app.use('/api/panas', panasRoutes)
 app.use('/api/leap', leapRoutes)
 app.use('/api/sam', samRoutes)
+app.use('/api/eaz', eazRoutes)
+app.use('/api/gds', gdsRoutes)
+app.use('/api/brums', brumsRoutes)
 
 
 
