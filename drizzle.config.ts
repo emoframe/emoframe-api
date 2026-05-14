@@ -1,5 +1,5 @@
 import {defineConfig} from 'drizzle-kit';
-import 'dotenv/config';
+import { getDatabaseUrl } from './src/db/connection';
 
 
 export default defineConfig({
@@ -7,7 +7,7 @@ export default defineConfig({
   schema: "./src/db/schema.ts",
   out: './drizzle',
   dbCredentials: {
-    url: process.env.DATABASE_URL!
+    url: getDatabaseUrl()
   }
 
 })
