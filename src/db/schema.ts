@@ -1,3 +1,5 @@
+import { real } from "drizzle-orm/pg-core";
+import { boolean } from "drizzle-orm/pg-core";
 import { pgTable, serial, varchar, integer, numeric, timestamp, jsonb } from "drizzle-orm/pg-core";
 import { int } from "zod";
 
@@ -222,6 +224,65 @@ export const brumsSubmission = pgTable('brums_submissions', {
 
   factorScores: jsonb('factor_scores').notNull(),
   tmd: integer('tmd').notNull(),
+
+  submittedAt: timestamp('submitted_at').defaultNow(),
+})
+
+
+
+export const pxSubmission = pgTable('px_submissions', {
+  id: serial('id').primaryKey(),
+  
+  applicationId: varchar('application_id', { length: 255 }).notNull(), 
+  evaluationId: varchar('evaluation_id', { length: 255 }).notNull(), 
+  externalUserId: varchar('external_user_id', { length: 255 }).notNull(),
+  
+  immersionScore: integer('immersion_score').notNull(),
+  funScore: integer('fun_score').notNull(), 
+  gameplayScore: integer('gameplay_score').notNull(),
+
+  submittedAt: timestamp('submitted_at').defaultNow(),
+})
+
+export const gamexSubmissions = pgTable('gamex_submissions', {
+  id: serial('id').primaryKey(),
+  
+  applicationId: varchar('application_id', { length: 255 }).notNull(), 
+  evaluationId: varchar('evaluation_id', { length: 255 }).notNull(), 
+  externalUserId: varchar('external_user_id', { length: 255 }).notNull(),
+  
+  rawAnswers: jsonb('raw_answers').notNull(),
+  
+  enjoymentScore: real('enjoyment_score').notNull(),
+  immersionScore: real('immersion_score').notNull(),
+  creativeThinkingScore: real('creative_thinking_score').notNull(),
+  activationScore: real('activation_score').notNull(),
+  negativeAffectScore: real('negative_affect_score').notNull(),
+  dominanceScore: real('dominance_score').notNull(),
+
+  
+  isValid: boolean('is_valid').notNull().default(true),
+  
+  submittedAt: timestamp('submitted_at').defaultNow(),
+});
+
+
+export const iuxrvSubmissions = pgTable('iuxrv_submissions', {
+  id: serial('id').primaryKey(),
+  
+  applicationId: varchar('application_id', { length: 255 }).notNull(), 
+  evaluationId: varchar('evaluation_id', { length: 255 }).notNull(), 
+  externalUserId: varchar('external_user_id', { length: 255 }).notNull(),
+
+  rawAnswers: jsonb('raw_answers').notNull(),
+
+  vrSicknessScore: real('vr_sickness_score').notNull(),
+  usabilityScore: real('usability_score').notNull(),
+  aestheticsScore: real('aesthetics_score').notNull(),
+  presenceScore: real('presence_score').notNull(),
+  emotionsScore: real('emotions_score').notNull(),
+
+  finalScore: real('final_score').notNull(),
 
   submittedAt: timestamp('submitted_at').defaultNow(),
 })

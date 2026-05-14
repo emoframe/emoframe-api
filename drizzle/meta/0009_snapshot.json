@@ -1,0 +1,1340 @@
+{
+  "id": "66599559-4982-4d25-b5ed-55865e7d654b",
+  "prevId": "c2c1c037-1706-45e2-8633-3aea599a50b1",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.brums_submissions": {
+      "name": "brums_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cheered_up": {
+          "name": "cheered_up",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "irritated": {
+          "name": "irritated",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "depressed": {
+          "name": "depressed",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "terrified": {
+          "name": "terrified",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crestfallen": {
+          "name": "crestfallen",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "broken_down": {
+          "name": "broken_down",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "confused": {
+          "name": "confused",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "exhausted": {
+          "name": "exhausted",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "anxious": {
+          "name": "anxious",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "unhappy": {
+          "name": "unhappy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "huffy": {
+          "name": "huffy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "worried": {
+          "name": "worried",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sad": {
+          "name": "sad",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sleepy": {
+          "name": "sleepy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "insecure": {
+          "name": "insecure",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "willing": {
+          "name": "willing",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tense": {
+          "name": "tense",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "disoriented": {
+          "name": "disoriented",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "grumpy": {
+          "name": "grumpy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "undecided": {
+          "name": "undecided",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tired": {
+          "name": "tired",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "energy": {
+          "name": "energy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "angry": {
+          "name": "angry",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "alert": {
+          "name": "alert",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "factor_scores": {
+          "name": "factor_scores",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tmd": {
+          "name": "tmd",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.eaz_submissions": {
+      "name": "eaz_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "happy": {
+          "name": "happy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tired": {
+          "name": "tired",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "worried": {
+          "name": "worried",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "confident": {
+          "name": "confident",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "courageous": {
+          "name": "courageous",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nervous": {
+          "name": "nervous",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "determined": {
+          "name": "determined",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "guilty": {
+          "name": "guilty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "passionate": {
+          "name": "passionate",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "angry": {
+          "name": "angry",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "brave": {
+          "name": "brave",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "open_new_things": {
+          "name": "open_new_things",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "happy_person": {
+          "name": "happy_person",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "easy_to_anger": {
+          "name": "easy_to_anger",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "proud_about_myself": {
+          "name": "proud_about_myself",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "humiliated": {
+          "name": "humiliated",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sad": {
+          "name": "sad",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "grumpy": {
+          "name": "grumpy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "rage": {
+          "name": "rage",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "resilient": {
+          "name": "resilient",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "raw_score": {
+          "name": "raw_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "zung_index": {
+          "name": "zung_index",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "classification": {
+          "name": "classification",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.gamex_submissions": {
+      "name": "gamex_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "raw_answers": {
+          "name": "raw_answers",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "enjoyment_score": {
+          "name": "enjoyment_score",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "immersion_score": {
+          "name": "immersion_score",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "creative_thinking_score": {
+          "name": "creative_thinking_score",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "activation_score": {
+          "name": "activation_score",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "negative_affect_score": {
+          "name": "negative_affect_score",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "dominance_score": {
+          "name": "dominance_score",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_valid": {
+          "name": "is_valid",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.gds_submissions": {
+      "name": "gds_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "satisfied": {
+          "name": "satisfied",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "no_activities": {
+          "name": "no_activities",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "empty": {
+          "name": "empty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "upset": {
+          "name": "upset",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "good": {
+          "name": "good",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "bad": {
+          "name": "bad",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "happy": {
+          "name": "happy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "helpless": {
+          "name": "helpless",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "stay_at_home": {
+          "name": "stay_at_home",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "problems_of_memory": {
+          "name": "problems_of_memory",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "wonderful_to_stay_alive": {
+          "name": "wonderful_to_stay_alive",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "useless": {
+          "name": "useless",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "full_of_energy": {
+          "name": "full_of_energy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "hopeless": {
+          "name": "hopeless",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "unlucky": {
+          "name": "unlucky",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "total_score": {
+          "name": "total_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "classification": {
+          "name": "classification",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.leap_submissions": {
+      "name": "leap_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "admiration": {
+          "name": "admiration",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "relieved": {
+          "name": "relieved",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tired": {
+          "name": "tired",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "happy": {
+          "name": "happy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "accept": {
+          "name": "accept",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "heat": {
+          "name": "heat",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "satisfied": {
+          "name": "satisfied",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "jealous": {
+          "name": "jealous",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "attracted": {
+          "name": "attracted",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calm": {
+          "name": "calm",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "funny": {
+          "name": "funny",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "desire": {
+          "name": "desire",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "careful": {
+          "name": "careful",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "strange": {
+          "name": "strange",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "hopeful": {
+          "name": "hopeful",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "fall_in_love": {
+          "name": "fall_in_love",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "conformed": {
+          "name": "conformed",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "hungry": {
+          "name": "hungry",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "guilty": {
+          "name": "guilty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cold": {
+          "name": "cold",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "despise": {
+          "name": "despise",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "take_pity_on": {
+          "name": "take_pity_on",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "disgusting": {
+          "name": "disgusting",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "need": {
+          "name": "need",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "duty": {
+          "name": "duty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "envy": {
+          "name": "envy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "humiliated": {
+          "name": "humiliated",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "interested": {
+          "name": "interested",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "fear": {
+          "name": "fear",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "proud": {
+          "name": "proud",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "shame": {
+          "name": "shame",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "angry": {
+          "name": "angry",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sleepy": {
+          "name": "sleepy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longing": {
+          "name": "longing",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sad": {
+          "name": "sad",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "surprised": {
+          "name": "surprised",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "thirst": {
+          "name": "thirst",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "thoughtful": {
+          "name": "thoughtful",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "serious": {
+          "name": "serious",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "scared": {
+          "name": "scared",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "factor_values": {
+          "name": "factor_values",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.panas_submissions": {
+      "name": "panas_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "interesed": {
+          "name": "interesed",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "distressed": {
+          "name": "distressed",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "excited": {
+          "name": "excited",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "upset": {
+          "name": "upset",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "strong": {
+          "name": "strong",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "guilty": {
+          "name": "guilty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "scared": {
+          "name": "scared",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "hostile": {
+          "name": "hostile",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "enthusiastic": {
+          "name": "enthusiastic",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "proud": {
+          "name": "proud",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "irritable": {
+          "name": "irritable",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "alert": {
+          "name": "alert",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ashamed": {
+          "name": "ashamed",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "inspired": {
+          "name": "inspired",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nervous": {
+          "name": "nervous",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "determined": {
+          "name": "determined",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "attentive": {
+          "name": "attentive",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "jittery": {
+          "name": "jittery",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "active": {
+          "name": "active",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "afraid": {
+          "name": "afraid",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "positive_score": {
+          "name": "positive_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "negative_score": {
+          "name": "negative_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.px_submissions": {
+      "name": "px_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "immersion_score": {
+          "name": "immersion_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "fun_score": {
+          "name": "fun_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "gameplay_score": {
+          "name": "gameplay_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.sam_submissions": {
+      "name": "sam_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "satisfaction": {
+          "name": "satisfaction",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "motivation": {
+          "name": "motivation",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "willpower": {
+          "name": "willpower",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.sus_submissions": {
+      "name": "sus_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "application_id": {
+          "name": "application_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evaluation_id": {
+          "name": "evaluation_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "external_user_id": {
+          "name": "external_user_id",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "use_frequency": {
+          "name": "use_frequency",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "use_complex": {
+          "name": "use_complex",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "use_easy": {
+          "name": "use_easy",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "need_help": {
+          "name": "need_help",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "function_integration": {
+          "name": "function_integration",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "inconsistency": {
+          "name": "inconsistency",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "learning_curve": {
+          "name": "learning_curve",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "jumbled": {
+          "name": "jumbled",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "confidence": {
+          "name": "confidence",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "learn_system": {
+          "name": "learn_system",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "final_score": {
+          "name": "final_score",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "submitted_at": {
+          "name": "submitted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
